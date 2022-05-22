@@ -1,0 +1,95 @@
+#:kivy 2.1.0
+
+<Button>
+	font_size: 32
+	size_hint: (0.3, 0.3)
+
+<MyLayout>
+	
+	FloatLayout:
+		size: root.width, root.height
+
+		Label:
+			id: znak0
+			text: ""
+			font_size: 60
+		Label:
+			id: znak1
+			text: ""
+			font_size: 60
+		Label:
+			id: znak2
+			text: ""
+			font_size: 60
+		Label:
+			id: znak3
+			text: ""
+			font_size: 60
+		Label:
+			id: znak4
+			text: ""
+			font_size: 60
+		Label:
+			id: znak5
+			text: ""
+			font_size: 60			
+		Label:
+			id: znak6
+			text: ""
+			font_size: 60
+		Label:
+			id: znak7
+			text: ""
+			font_size: 60
+		Label:
+			id: znak8
+			text: ""
+			font_size: 60			
+		Button:
+			text: znak0.text
+			pos_hint: {"x":0, "top":1}
+			on_press: root.press(0)
+
+		Button:
+			text: znak1.text
+			pos_hint: {"x":0.35, "top":1}
+			on_press: root.press(1)
+
+		Button:
+			text: znak2.text
+			pos_hint: {"x":0.7, "top":1}
+			on_press: root.press(2)
+
+		Button:
+			text: znak3.text
+			pos_hint: {"x":0, "top":0.66}
+			on_press: root.press(3)
+
+		Button:
+			text: znak4.text
+			pos_hint: {"x":0.35, "top":0.66}
+			on_press: root.press(4)
+
+		Button:
+			text: znak5.text
+			pos_hint: {"x":0.7, "top":0.66}
+			on_press: root.press(5)
+
+
+		Button:
+			text: znak6.text
+			pos_hint: {"x":0}
+			on_press: root.press(6)
+		
+		Button:
+			text: znak7.text
+			pos_hint: {"x":0.35, "bottom":1}
+			on_press: root.press(7)
+
+		Button:
+			text: znak8.text
+			pos_hint: {"x":0.7, "bottom":1}
+			on_press: root.press(8)
+	
+			
+		
